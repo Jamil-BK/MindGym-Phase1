@@ -22,7 +22,7 @@ MindGym is a multi-tool web application designed to offer a combination of quick
 * /riddle        : Riddle of the day with answer checking
 * /movies        : Search movies using public API
 
-## 
+
 
 ##### Components Summary
 
@@ -31,7 +31,7 @@ MindGym is a multi-tool web application designed to offer a combination of quick
 * Footer          : Site-wide footer component
 * Note: Additional UI logic is still inside the main page files. In Phase 3, these will be refactored into smaller reusable components such as JokeCard, QuizQuestion, etc.
 
-## 
+
 
 ##### State Management Overview
 
@@ -41,7 +41,7 @@ MindGym is a multi-tool web application designed to offer a combination of quick
 * Riddle Tool uses: riddle, userAnswer, score
 * Movies Tool uses: searchTerm, results, error
 
-## 
+
 
 ##### Styling and Theming
 
@@ -50,7 +50,7 @@ MindGym is a multi-tool web application designed to offer a combination of quick
 * Responsive layout using flexbox, rem, %, and media queries
 * Conditional styling is applied to buttons, feedback messages, and game states
 
-## 
+
 
 ##### Features Demonstrated
 
@@ -61,7 +61,7 @@ MindGym is a multi-tool web application designed to offer a combination of quick
 * LocalStorage usage for saving joke favorites
 * Responsive design and visual styling for interactive tools
 
-## 
+
 
 ##### Planned Features for Phase 3
 
@@ -72,19 +72,19 @@ MindGym is a multi-tool web application designed to offer a combination of quick
 * Add performance optimizations (lazy loading, code cleanup)
 * Prepare slides and video walkthrough for final presentation
 
-## 
+
 
 ##### Screenshots
 
 Screenshots of all tools and interface views are included in the attached Word report (Phase 2 Completion Report.docx).
 
-## 
+
 
 ##### Repository Notes
 
 The GitHub repository was originally created during Phase 1 and retains its original name. All Phase 2 updates have been added to the same repo for continuity.
 
-## 
+
 
 ##### Submission Includes
 
