@@ -1,0 +1,142 @@
+.tool-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 0rem;
+  color: orange;
+}
+
+.tool-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #d1d5db;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Start Button */
+.start-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.start-memory-btn {
+  background: linear-gradient(to right, #ff9900, #ff5e00);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.start-memory-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Main container */
+.memory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Emoji boxes for sequence or user input */
+.emoji-sequence {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.emoji-box {
+  width: 60px;
+  height: 60px;
+  background-color: #1e1e1e;
+  border: 2px solid #777;
+  border-radius: 10px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Emoji option buttons */
+.emoji-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.emoji-btn {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  border: 2px solid #666;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.emoji-btn:hover {
+  background-color: #333;
+  border-color: #ff8800;
+}
+
+/* Result + buttons */
+.result-box {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.result-msg {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffaa00;
+  margin-bottom: 1rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.action-btn, .reset-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.action-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.reset-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.action-btn:hover {
+  background-color: #218838;
+}
+
+.reset-btn:hover {
+  background-color: #c82333;
+}
+
+/* Score - shown at the bottom only after question answered */
+.score-display {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffcc00;
+}

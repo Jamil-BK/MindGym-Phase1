@@ -1,0 +1,152 @@
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Title + Subtitle like other pages */
+.tool-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: orange;
+  margin-top: 1rem;
+  margin-bottom: 0rem; 
+  
+}
+
+.tool-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 0.5rem; 
+  margin-bottom: 2.5rem;
+  color: #d1d5db;
+}
+
+/* Question line styling */
+.question-line {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+
+.question-number {
+  background-color: pink;
+  color: black;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 0 5px rgba(255, 192, 203, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-text {
+  background-color: orange;
+  color: black;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex-grow: 1;
+  min-width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.4);
+}
+
+/* Answer buttons */
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+.answer-box {
+  background-color: #222;
+  border: 2px solid #888;
+  border-radius: 10px;
+  padding: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  user-select: none;
+}
+
+.answer-box:hover {
+  border-color: white;
+  background-color: #333;
+}
+
+.answer-box.correct {
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+
+.answer-box.incorrect {
+  background-color: crimson;
+  color: white;
+  border-color: crimson;
+}
+
+/* Feedback text */
+.feedback {
+  margin-top: 1rem;
+  color: #42ff9e;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Next button */
+.next-button {
+  background: linear-gradient(to right, #facc15, #f97316);
+  color: black;
+  font-weight: bold;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.next-button:hover {
+  background: linear-gradient(to right, #fcd34d, #fb923c);
+  transform: scale(1.05);
+}
+
+/* Result section */
+.result-section {
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+.result-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.result-score {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
