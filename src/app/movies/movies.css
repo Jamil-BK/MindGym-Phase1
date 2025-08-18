@@ -1,0 +1,156 @@
+/* movies.css */
+
+/* Title styling for the page */
+.tool-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: orange;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+/* Subtitle styling */
+.tool-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: #d1d5db;
+}
+
+/* Wrapper for the entire movies section */
+.movies-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Layout for search box containing input and button */
+.movie-search-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Input box for movie title */
+.movie-input {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #888;
+  border-radius: 8px;
+  background-color: #222;
+  color: white;
+  width: 60%;
+}
+
+/* Search button styling */
+.movie-button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: goldenrod;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.movie-button:hover {
+  background-color: orange;
+}
+
+/* Style for error messages */
+.error-msg {
+  color: #ff4d4d;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  animation: fadeShakeOut 4s ease forwards;
+}
+
+/* Container for movie result */
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px goldenrod;
+  width: 100%;
+}
+
+/* Poster image styling */
+.movie-poster {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+/* Layout for movie information text */
+.movie-info {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Movie title inside the result */
+.movie-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: rgb(201, 53, 53);
+}
+
+/* Plot description styling */
+.movie-plot {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* General spacing for movie info */
+.movie-info p {
+  margin: 0.3rem 0;
+}
+
+/* Keyframe animation: Fade In, Shake, and Fade Out */
+@keyframes fadeShakeOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  15% {
+    opacity: 1;
+    transform: translateX(8px);
+  }
+  30% {
+    transform: translateX(-6px);
+  }
+  45% {
+    transform: translateX(6px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}

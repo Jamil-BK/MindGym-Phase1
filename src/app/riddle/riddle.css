@@ -1,0 +1,114 @@
+.riddle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Buttons */
+.riddle-btn-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.riddle-btn {
+  background: linear-gradient(90deg, #ffcc00, #ff6a4d);
+  color: #111;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  animation: glowPulse 2.2s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.riddle-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+/* margin for Check Answer button */
+.check-btn {
+  margin-top: 1rem;
+}
+
+/* Input */
+.riddle-input {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #999;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+/* Riddle Box */
+.riddle-box {
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #444;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.riddle-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Feedback */
+.riddle-feedback {
+  font-weight: bold;
+  color: #00ff88;
+}
+
+/* Score Text (inside glowing box) */
+.riddle-score {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Score Box Wrapper */
+.score-box {
+  margin-top: 1.5rem;
+  background-color: #1c1c1c;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+/* Animation */
+@keyframes glowPulse {
+  0%   { box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); }
+  50%  { box-shadow: 0 0 18px rgba(255, 174, 0, 0.9); }
+  100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); }
+}
+
+.riddle-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: orange;
+  margin-top: 1rem;
+  margin-bottom: 0rem;   
+}
+
+.riddle-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: -1.5rem;     
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,105 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: #111;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.dashboard-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* Card Styling */
+.dashboard-card {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.08);
+}
+
+.dashboard-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.dashboard-card p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Button */
+.dashboard-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dashboard-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Card Colors */
+.yellow {
+  background-color: #FFD700;
+  color: black;
+}
+
+.orange {
+  background-color: #FFA500;
+  color: black;
+}
+
+.pink {
+  background-color: #FF69B4;
+  color: black;
+}
+
+.blue {
+  background-color: #00BFFF;
+  color: black;
+}
+
+.ash {
+  background-color: #A9A9A9;
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .dashboard-card h2 {
+    font-size: 1.25rem;
+  }
+
+  .dashboard-card p {
+    font-size: 0.95rem;
+  }
+
+  .dashboard-btn {
+    padding: 0.5rem 1.25rem;
+  }
+}
