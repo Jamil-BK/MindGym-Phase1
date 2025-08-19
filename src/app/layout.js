@@ -3,6 +3,7 @@
 import "./globals.css";
 import HeaderBlock from "../../components/HeaderBlock";
 import Footer from "../../components/Footer";
+import FloatingFeedback from "../../components/FloatingFeedback";
 
 // Page metadata for browser and search engines
 export const metadata = {
@@ -30,6 +31,9 @@ export default function RootLayout({ children }) {
 
           {/* Shared footer shown on all pages */}
           <Footer />
+
+          {/* Floating feedback widget visible on all pages */}
+          <FloatingFeedback />
         </div>
       </body>
     </html>

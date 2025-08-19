@@ -1,10 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
-import ToolPage from "../_templates/ToolPage";
+import dynamic from "next/dynamic";
 import "./quiz.css";
 
+// Lazy load ToolPage component
+const ToolPage = dynamic(() => import("../_templates/ToolPage"));
+
 export default function QuizPage() {
-  // State variables to manage questions, current question index, score, and display logic
   const [questions, setQuestions] = useState([]);
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
@@ -12,12 +14,10 @@ export default function QuizPage() {
   const [selected, setSelected] = useState(null);
   const [feedback, setFeedback] = useState("");
 
-  // Runs once to initialize the quiz with generated questions
   useEffect(() => {
     generateQuiz();
   }, []);
 
-  // Generates 5 random math questions with shuffled options
   function generateQuiz() {
     const newQuestions = Array.from({ length: 5 }, () => {
       const num1 = Math.floor(Math.random() * 10) + 1;
@@ -44,7 +44,6 @@ export default function QuizPage() {
       };
     });
 
-    // Resets state for a fresh quiz
     setQuestions(newQuestions);
     setCurrent(0);
     setScore(0);
@@ -53,12 +52,10 @@ export default function QuizPage() {
     setShowResult(false);
   }
 
-  // Helper function to randomly shuffle the answer options
   function shuffle(array) {
     return array.sort(() => Math.random() - 0.5);
   }
 
-  // Handles option selection, evaluates correctness, and displays feedback
   function handleOptionClick(option) {
     setSelected(option);
     const isCorrect = option === questions[current].correct;
@@ -70,7 +67,6 @@ export default function QuizPage() {
     }
   }
 
-  // Moves to the next question or ends the quiz
   function nextQuestion() {
     setSelected(null);
     setFeedback("");
@@ -81,7 +77,6 @@ export default function QuizPage() {
     }
   }
 
-  // Restarts the quiz with a new set of questions
   function restartQuiz() {
     generateQuiz();
   }
@@ -95,7 +90,6 @@ export default function QuizPage() {
       </div>
 
       <div className="quiz-container">
-        {/* Question display and answer selection interface */}
         {questions.length > 0 && !showResult && (
           <>
             <div className="question-line">
@@ -103,7 +97,6 @@ export default function QuizPage() {
               <div className="question-text">{questions[current].question}</div>
             </div>
 
-            {/* Answer options */}
             <div className="answer-grid">
               {questions[current].options.map((opt, idx) => (
                 <div
@@ -124,7 +117,6 @@ export default function QuizPage() {
               ))}
             </div>
 
-            {/* Feedback and next question button */}
             {feedback && <div className="feedback">{feedback}</div>}
 
             {selected !== null && (
@@ -135,8 +127,6 @@ export default function QuizPage() {
           </>
         )}
 
-
-        {/* Final result view after all questions answered */}
         {showResult && (
           <div className="result-section">
             <p className="result-title">Quiz Complete</p>

@@ -1,7 +1,10 @@
 "use client";
 import { useState } from "react";
-import ToolPage from "../_templates/ToolPage";
+import dynamic from "next/dynamic";
 import "./riddle.css";
+
+// Lazy load ToolPage
+const ToolPage = dynamic(() => import("../_templates/ToolPage"));
 
 // Riddle list with multiple accepted answers for each question
 const riddles = [

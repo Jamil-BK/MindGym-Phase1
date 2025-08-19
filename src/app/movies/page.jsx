@@ -1,7 +1,10 @@
 "use client";
 import { useState } from "react";
-import ToolPage from "../_templates/ToolPage";
+import dynamic from "next/dynamic";
 import "./movies.css";
+
+// Lazy load ToolPage
+const ToolPage = dynamic(() => import("../_templates/ToolPage"));
 
 export default function MoviesPage() {
   const [query, setQuery] = useState("");

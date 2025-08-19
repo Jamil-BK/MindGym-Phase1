@@ -1,0 +1,54 @@
+.feedback-page {
+  padding: 2rem;
+  color: white;
+}
+
+.button-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.feedback-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.feedback-btn:hover {
+  background-color: #d43939;
+}
+
+.feedback-btn.red {
+  background-color: #c20000;
+}
+
+.feedback-btn.red:hover {
+  background-color: #9d0000;
+}
+
+.feedback-btn.small-btn {
+  padding: 4px 10px;
+  font-size: 13px;
+  margin-top: 0.5rem;
+}
+
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feedback-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #111;
+  color: white;
+}

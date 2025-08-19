@@ -1,7 +1,11 @@
 "use client";
-import { useState } from "react";
-import ToolPage from "../_templates/ToolPage";
+import dynamic from "next/dynamic";
 import "./memory.css";
+
+// Dynamically import the ToolPage layout
+const ToolPage = dynamic(() => import("../_templates/ToolPage"));
+
+import { useState } from "react";
 
 // Emoji pool used to randomly generate the memory sequence
 const emojiSet = ["🍎", "🍌", "🍇", "🍉", "🍍", "🍓"];
