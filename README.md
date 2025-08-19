@@ -1,3 +1,46 @@
+# MindGym - Final Project (Phase 3)
+
+A multi-tool web application built with Next.js and React, designed to challenge your brain and entertain you through interactive games and tools.
+
+This is the final submission (Phase 3) for the CPAN-144 Group Project.
+
+## Live Demo
+
+Link: https://
+
+## Features
+
+- Jokes Tool - Random joke generator with save-to-favorites using localStorage
+- Quick Math Quiz - Five-question math quiz with scoring and feedback
+- Memory Challenge - Emoji pattern-matching game with scoring
+- Riddle of the Day - Input-based riddle solver with scoring and reset
+- Movie Search - Uses OMDb API to search and display movie details
+- Feedback Form and Viewer - Allows users to submit feedback and view saved messages
+
+## Technologies Used
+
+- Next.js (App Router)
+- React (JavaScript)
+- Plain CSS (no Tailwind)
+- LocalStorage
+- useState, useEffect
+- OMDb API, Official Joke API
+
+## Project Structure
+
+- /app - All main pages (quiz, jokes, riddle, memory, movies, feedback)
+- /components - Shared components (HeaderBlock, Footer, ToolPage)
+- /public - Static assets
+
+## Developer
+
+Jamil Khalil (N01752206)  
+Solo Developer - CPAN-144 Final Project  
+Humber College, Summer 2025
+
+
+===================================================================================
+
 # MindGym – Phase 2
 
 Train Your Brain – With Click and Trick  
